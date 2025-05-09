@@ -27,7 +27,7 @@ def index(request: HttpRequest) -> HttpResponse:
 
 
 def about(request: HttpRequest) -> HttpResponse:
-    return render(request, 'women/about.html', {'title': 'O saite'})
+    return render(request, 'women/about.html', {'title': 'O saite', 'menu': menu})
 
 def page_not_found(request, exception):
     return HttpResponseNotFound('<h1>Страница не найдена</h1>')
